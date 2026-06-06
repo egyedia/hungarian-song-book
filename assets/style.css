@@ -344,10 +344,12 @@ hr {
    ========================================================================== */
 main { padding-bottom: 3rem; }
 
-.page-intro {
-  max-width: 70ch;
-}
-.prose { max-width: 70ch; }
+.page-intro { max-width: none; }
+.page-intro-wide { max-width: none; }
+.prose { max-width: none; }
+/* A `container prose` oldalakon a .prose ne írja felül a konténer szélességét:
+   ugyanúgy 1080px, középre zárva, mint minden más oldal. */
+.container.prose { max-width: var(--maxw); }
 .prose ol, .prose ul { padding-left: 1.5rem; }
 .prose li { margin-bottom: 0.75rem; }
 
@@ -371,12 +373,12 @@ main { padding-bottom: 3rem; }
 .spreads {
   margin: 1.5rem 0;
   display: grid;
-  gap: 1.5rem 1.75rem;
+  gap: 2rem 3rem;
   grid-template-columns: 1fr;   /* mobil: egy oszlop */
 }
 .spreads figure {
   margin: 0;
-  max-width: 440px;             /* thumbnail-méret */
+  max-width: none;              /* a cellát teljesen kitölti */
 }
 .spreads img {
   border-radius: var(--radius);
@@ -386,8 +388,8 @@ main { padding-bottom: 3rem; }
   margin-top: 0.5rem;
 }
 @media (min-width: 700px) {
-  /* desktop: két oszlop, kisebb thumbnailek */
-  .spreads { grid-template-columns: repeat(2, minmax(0, 440px)); }
+  /* desktop: két egyenlő oszlop, kitölti a szélességet */
+  .spreads { grid-template-columns: 1fr 1fr; }
 }
 
 /* Kompakt PDF-link ikonnal (a thumbnailek alatt) */
@@ -431,24 +433,36 @@ main { padding-bottom: 3rem; }
 .toc.toc-plain li { justify-content: flex-start; }
 
 /* Tartalomjegyzék fehér dobozban */
-.toc-card {
+.toc-card { margin: 1rem 0 1.5rem; }
+.toc-card > div {
   background: var(--white);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.25rem 1.5rem 1.5rem;
-  margin: 1rem 0 1.5rem;
+  overflow: hidden;             /* a piros fejléc sarkai a dobozhoz simuljanak (mint a táblázatnál) */
+  margin-bottom: 1.5rem;
 }
-.toc-card h3 { margin-top: 0; margin-bottom: 0.5rem; }
-.toc-card .toc { margin: 0.25rem 0 1.25rem; max-width: none; }
-.toc-card > div:last-child .toc { margin-bottom: 0; }
+.toc-card h3 {                  /* végigérő piros fejléc-sáv, mint a táblázat thead-je */
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0.6rem 1rem;
+}
+.toc-card .toc {
+  margin: 0;
+  max-width: none;
+  padding: 0.35rem 1rem 0.6rem;
+}
+.toc-card .toc li:last-child { border-bottom: none; }
 @media (min-width: 700px) {
   .toc-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 2.5rem;
+    gap: 1.5rem;
     align-items: start;
   }
-  .toc-card .toc { margin-bottom: 0; }
+  .toc-card > div { margin-bottom: 0; }
 }
 
 .signature {
@@ -471,6 +485,9 @@ main { padding-bottom: 3rem; }
   box-shadow: var(--shadow);
   margin: 1.5rem 0;
 }
+/* szimmetrikus belső tér: az utolsó/első elem margója ne tolja el a szöveget */
+.callout > :first-child { margin-top: 0; }
+.callout > :last-child { margin-bottom: 0; }
 
 .tip {
   border-left: 4px solid var(--red);
@@ -479,6 +496,8 @@ main { padding-bottom: 3rem; }
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
 }
+.tip > :first-child { margin-top: 0; }
+.tip > :last-child { margin-bottom: 0; }
 
 /* Táblázatok (szószedet, errata, kutatások) */
 .table-wrap { overflow-x: auto; }
