@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# logok / ideiglenes
+*.log
+_private/

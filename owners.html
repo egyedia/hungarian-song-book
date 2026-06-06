@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>For Book Owners – Songs from Beyond the Seven Seas | Hungarian Songbook</title>
+  <meta name="description" content="A page for the book's owners: the full audio collection and extras.">
+  <meta name="robots" content="noindex">
+
+  <link rel="alternate" hreflang="en" href="https://hungariansongbook.com/owners.html">
+  <link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/tulajdonosoknak.html">
+  <link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/owners.html">
+  <link rel="canonical" href="https://hungariansongbook.com/owners.html">
+
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/favicon.png" alt="" aria-hidden="true">
+        <span>Hungarian Songbook</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="book.html">The Book</a></li>
+          <li><a href="audio.html">Listen</a></li>
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false">Learn</button>
+            <ul class="dropdown-menu">
+              <li><a href="tuning.html">Tuning</a></li>
+              <li><a href="strumming.html">Strumming</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li>
+            <div class="lang-switch">
+              <a href="owners.html" aria-current="true" lang="en">EN</a>
+              <a href="hu/tulajdonosoknak.html" lang="hu">HU</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <h1>For Book Owners</h1>
+
+      <!-- ===== Kapu (spec 5.11) ===== -->
+      <section class="gate" id="gate">
+        <p>This page is for the book's owners. To enter, type the
+          <!-- TODO [HÁNYADIK] és [OLDALSZÁM]: a könyv adott oldalán a hányadik szó (spec 5.11 + 7.6). -->
+          [Nth] word on page [PAGE] of the book.</p>
+        <form id="gate-form" autocomplete="off">
+          <label for="gate-input" class="muted">Word from the book</label>
+          <input type="text" id="gate-input" name="word" inputmode="text" autocapitalize="none" spellcheck="false">
+          <p class="gate-error" id="gate-error" data-message="That's not it – try again." role="alert"></p>
+          <button type="submit" class="btn btn-primary">Enter</button>
+        </form>
+      </section>
+
+      <!-- ===== Vásárlói tartalom (kapu mögött) ===== -->
+      <section id="content" hidden>
+        <h2>The full audio collection</h2>
+        <!-- TODO [ASSET]: a teljes hanganyag NEM LISTÁZOTT YouTube-playlist linkje (spec 5.11 + 6.). -->
+        <p><a class="btn btn-primary" href="#">Open the full playlist on YouTube</a></p>
+
+        <h2>Extras</h2>
+        <!-- TODO [TARTALOM]: későbbi extrák – nyomtatható anyagok, angol dalkivonatok (spec 5.11). -->
+        <p class="muted">Printable materials and English song summaries are coming here.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="endorsements.html">Endorsements</a></li>
+        <li><a href="research.html">The Research</a></li>
+        <li><a href="errata.html">Errata</a></li>
+        <li><a href="owners.html">For Book Owners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-legal">© Egyedi Attila Levente, 2026 · hungariansongbook.com · Crossroads Music &amp; Arts Foundation – <a href="https://crossroadsband.org">crossroadsband.org</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

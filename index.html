@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Songs from Beyond the Seven Seas | Hungarian Songbook</title>
+  <meta name="description" content="A bilingual Hungarian songbook with a ukulele bootcamp – for everyday life in the diaspora. 63 songs with chord accompaniment, every measure marked.">
+
+  <!-- hreflang párok (spec 4. + 8.) -->
+  <link rel="alternate" hreflang="en" href="https://hungariansongbook.com/index.html">
+  <link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/index.html">
+  <link rel="canonical" href="https://hungariansongbook.com/index.html">
+
+  <!-- Open Graph (spec 8.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Songs from Beyond the Seven Seas | Hungarian Songbook">
+  <meta property="og:description" content="A bilingual Hungarian songbook with a ukulele bootcamp – for everyday life in the diaspora.">
+  <!-- TODO [ASSET]: 1600px széles borítókép a social previewhöz (spec 7.1) -->
+  <meta property="og:image" content="https://hungariansongbook.com/assets/cover-en.jpg">
+  <meta property="og:url" content="https://hungariansongbook.com/index.html">
+
+  <!-- TODO [ASSET]: kakas/madár sziluett SVG favicon Tóth Zoltántól (spec 3. + 7.4) -->
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+
+  <!-- Display-betű teljes magyar ékezetkészlettel (ő, ű) – Alegreya (spec 3.) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ====================== Fejléc ====================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <!-- TODO [ASSET]: madár/kakas motívum SVG (spec 7.4) -->
+        <img src="assets/favicon.png" alt="" aria-hidden="true">
+        <span>Hungarian Songbook</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="book.html">The Book</a></li>
+          <li><a href="audio.html">Listen</a></li>
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false">Learn</button>
+            <ul class="dropdown-menu">
+              <li><a href="tuning.html">Tuning</a></li>
+              <li><a href="strumming.html">Strumming</a></li>
+              <li><a href="glossary.html">Glossary</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li>
+            <div class="lang-switch">
+              <a href="index.html" aria-current="true" lang="en">EN</a>
+              <a href="hu/index.html" lang="hu">HU</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ====================== Hero (spec 5.1) ====================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <img class="hero-image" src="assets/cover-en.jpg"
+               alt="Cover of Songs from Beyond the Seven Seas">
+        </div>
+        <div>
+          <h1>Songs from Beyond the Seven Seas</h1>
+          <p class="lead">A bilingual Hungarian songbook with a ukulele bootcamp – for everyday life in the diaspora.</p>
+          <p>63 songs with chord accompaniment, every measure marked. Children's songs, folk songs, holiday songs – from Kalotaszeg to California.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="buy.html">Buy the book</a>
+            <a class="btn btn-secondary" href="audio.html">Listen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Három kártya (spec 5.1) ====================== -->
+    <section class="container">
+      <div class="card-grid">
+        <a class="card" href="tuning.html">
+          <h3>Learn the ukulele</h3>
+          <p>Tune up and start playing – relative tuning, step by step.</p>
+        </a>
+        <a class="card" href="audio.html">
+          <h3>Hear the songs</h3>
+          <p>Recordings of the songs on our YouTube channel.</p>
+        </a>
+        <a class="card" href="book.html">
+          <h3>About the book</h3>
+          <p>What this songbook is, and the story behind it.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================== Ajánlások (spec 5.1) ====================== -->
+    <section class="container">
+      <h2>Endorsements</h2>
+      <div class="testimonials">
+        <blockquote>
+          <p>Hungarian music transcends boundaries—national, cultural, political, instrumental, and even linguistic.</p>
+          <cite>— Kalman Magyar</cite>
+        </blockquote>
+        <blockquote>
+          <p>This much-needed music textbook opens the door, with brilliant simplicity, to the world of ukulele playing and Hungarian songs.</p>
+          <cite>— Etelka Keszei</cite>
+        </blockquote>
+      </div>
+      <p><a href="endorsements.html">Read the full endorsements →</a></p>
+    </section>
+  </main>
+
+  <!-- ====================== Lábléc ====================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="endorsements.html">Endorsements</a></li>
+        <li><a href="research.html">The Research</a></li>
+        <li><a href="errata.html">Errata</a></li>
+        <li><a href="owners.html">For Book Owners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="footer-legal">© Egyedi Attila Levente, 2026 · hungariansongbook.com · Crossroads Music &amp; Arts Foundation – <a href="https://crossroadsband.org">crossroadsband.org</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
