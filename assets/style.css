@@ -328,7 +328,7 @@ hr {
 /* Hosszabb, többbekezdéses ajánlások: egy oszlop, olvasható sorhossz */
 .endorsements {
   display: block;
-  max-width: 72ch;
+  max-width: none;
 }
 .endorsements blockquote { margin-bottom: 1.25rem; }
 .endorsement-divider {
@@ -484,6 +484,25 @@ main { padding-bottom: 3rem; }
   padding: 1rem 1.25rem;
   box-shadow: var(--shadow);
   margin: 1.5rem 0;
+}
+
+/* Kutatások – külön dobozok, 2 oszlop (Research) */
+.research-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin: 1.5rem 0;
+}
+.research-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.1rem 1.25rem;
+}
+.research-item p { margin: 0.4rem 0 0.6rem; }
+.research-item a { font-size: 0.9rem; }
+@media (min-width: 700px) {
+  .research-grid { grid-template-columns: 1fr 1fr; }
 }
 /* szimmetrikus belső tér: az utolsó/első elem margója ne tolja el a szöveget */
 .callout > :first-child { margin-top: 0; }
