@@ -17,8 +17,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dalok az Óperencián túlról | Hungarian Songbook">
   <meta property="og:description" content="Legyen dal minden alkalomra: 63 dal, minden ütem fölött akkorddal — kétnyelvű, fekve nyitva maradó daloskönyv kezdő ukuleletanfolyammal.">
-  <!-- TODO [ASSET]: 1600px széles borítókép a social previewhöz (spec 7.1) -->
-  <meta property="og:image" content="https://hungariansongbook.com/assets/cover-hu.jpg">
+  <meta property="og:image" content="https://hungariansongbook.com/assets/og-card-hu.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:url" content="https://hungariansongbook.com/hu/index.html">
 
   <!-- TODO [ASSET]: kakas/madár sziluett SVG favicon Tóth Zoltántól (spec 3. + 7.4) -->
@@ -27,9 +29,26 @@
   <!-- Display-betű teljes magyar ékezetkészlettel (ő, ű) – Alegreya (spec 3.) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="../assets/style.css?v=6">
+  <link rel="stylesheet" href="../assets/style.css?v=7">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Dalok az Óperencián túlról — Songs from Beyond the Seven Seas",
+    "author": {"@type": "Person", "name": "Egyedi Attila Levente"},
+    "isbn": "979-8-9965723-0-4",
+    "bookFormat": "https://schema.org/Paperback",
+    "numberOfPages": 222,
+    "bookEdition": "Harmadik, javított kiadás",
+    "inLanguage": ["hu", "en"],
+    "genre": "Daloskönyv",
+    "image": "https://hungariansongbook.com/assets/cover-hu-800.jpg",
+    "url": "https://hungariansongbook.com/hu/index.html",
+    "offers": {"@type": "Offer", "price": "35.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://hungariansongbook.com/hu/vasarlas.html"}
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Ugrás a tartalomra</a>
@@ -65,7 +84,7 @@
             </ul>
           </li>
           <li><a href="tablazatok.html">Táblázatok</a></li>
-          <li><a href="vasarlas.html">Vásárlás</a></li>
+          <li><a class="nav-cta" href="vasarlas.html">Vásárlás</a></li>
           <li>
             <div class="lang-switch">
               <a href="../index.html" lang="en">EN</a>
@@ -78,50 +97,127 @@
   </header>
 
   <main id="main">
-    <!-- ====================== Hero (spec 5.1) ====================== -->
-    <section class="hero">
+    <!-- ====================== Hero ====================== -->
+    <section class="hero band--red">
       <div class="container hero-grid">
-        <div>
-          <img class="hero-image" src="../assets/cover-hu.jpg"
-               alt="A Dalok az Óperencián túlról könyv borítója">
-        </div>
-        <div>
+        <div class="hero-copy">
+          <p class="eyebrow">Kétnyelvű magyar daloskönyv</p>
           <h1>Dalok az Óperencián túlról</h1>
           <p class="lead">Legyen dal minden alkalomra — és mindenki kísérhesse.</p>
-          <p>63 gyerekdal, népdal és ünnepi dal, minden ütem fölött akkorddal — gitárra, ukulelére, zongorára, harmonikára is. Minden magyarázat két nyelven szól (maguk a dalok magyarul), a spirálkötésnek köszönhetően kottatartón fekve nyitva marad — ez a könyv nem a polcra készült, hanem a kottatartóra —, és egy kezdő ukuleletanfolyam is van benne. Minden dala jogtiszta.</p>
+          <ul class="fact-chips">
+          <li>63 dal</li>
+          <li>Akkord minden ütem fölött</li>
+          <li>Kottatartón nyitva marad</li>
+          <li>Kezdő ukuleletanfolyam</li>
+          </ul>
           <div class="hero-buttons">
-            <a class="btn btn-primary" href="vasarlas.html">Megveszem — 35 USD</a>
+            <a class="btn btn-primary btn-large" href="vasarlas.html">Megveszem — 35 USD</a>
             <a class="btn btn-secondary" href="konyv.html#inside">Lapozz bele</a>
             <a class="btn btn-secondary" href="hanganyag.html">Belehallgatok</a>
           </div>
         </div>
+        <div class="hero-cover">
+          <picture>
+            <source type="image/webp" srcset="../assets/cover-hu-480.webp 480w, ../assets/cover-hu-960.webp 960w" sizes="(min-width: 700px) 360px, 300px">
+            <img src="../assets/cover-hu-800.jpg" width="800" height="1185" fetchpriority="high"
+                 alt="A Dalok az Óperencián túlról könyv borítója">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Mi van benne + minta-oldalpár ====================== -->
+    <section class="band band--paper after-hero">
+      <div class="container split">
+        <div>
+          <h2>Nem a polcra készült, hanem a kottatartóra</h2>
+          <p class="muted">63 gyerekdal, népdal és ünnepi dal.</p>
+          <ul class="feature-list">
+          <li>Akkord minden ütem fölött — gitárra, ukulelére, zongorára, harmonikára is.</li>
+          <li>Minden magyarázat két nyelven szól (maguk a dalok magyarul).</li>
+          <li>A spirálkötésnek köszönhetően kottatartón fekve nyitva marad.</li>
+          <li>Egy kezdő ukuleletanfolyam is van benne.</li>
+          <li>Minden dala jogtiszta.</li>
+          </ul>
+          <a class="btn btn-secondary" href="konyv.html#inside">Lapozz bele</a>
+        </div>
+        <figure>
+          <a class="spread-frame" href="konyv.html#inside">
+            <img src="../assets/page-content-lanc-lanc-eszterlanc-web.jpg" width="900" height="643" loading="lazy"
+                 alt="Lánc, lánc, eszterlánc — kétnyelvű daloldalpár (kis felbontású előnézet)">
+          </a>
+          <figcaption>Lánc, lánc, eszterlánc — minden oldalpáron egymás mellett a két nyelv.</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- ====================== Három kártya (spec 5.1) ====================== -->
-    <section class="container">
-      <h2>Kinek szól a könyv?</h2>
-      <div class="card-grid">
+    <section class="band band--cream">
+      <div class="container">
+        <h2>Kinek szól a könyv?</h2>
+        <div class="card-grid">
         <a class="card" href="konyv.html">
           <h3>Együtt éneklünk</h3>
           <p>Család, cserkészet, tábor, templom: dal az év minden alkalmára. A dalok magyarul szólnak — minden magyarázat angolul is megvan, hogy a vegyes családok és csoportok is bekapcsolódhassanak.</p>
+          <span class="arrow-link">A könyvről</span>
         </a>
         <a class="card" href="hangolas.html">
           <h3>Még sosem játszottam hangszeren</h3>
           <p>Az ukulele-gyorstalpaló nulláról az első tábortűzi dalig visz.</p>
+          <span class="arrow-link">Kezdd a hangolással</span>
         </a>
         <a class="card" href="konyv.html#inside">
           <h3>Már játszom — repertoárt keresek</h3>
           <p>Akkord minden ütem fölött, esztammagyarázat, és akkordtáblázat hat hangszerre — köztük kontrára.</p>
+          <span class="arrow-link">Lapozz bele</span>
         </a>
+        </div>
       </div>
-      <p class="center muted">Nem csak gitárra. Nem csak ukulelekönyv. Daloskönyv mindenkinek, aki játszani vagy énekelni szeretne.</p>
+    </section>
+
+    <!-- ====================== Az év alkalmai (a könyv fejezetei) ====================== -->
+    <section class="band band--ink">
+      <div class="container">
+        <div class="section-head center">
+          <h2>Dal az év minden alkalmára</h2>
+          <p>Ezek azok a dalok, amiket a kaliforniai magyar közösségek tényleg kérnek.</p>
+        </div>
+        <ol class="occasions">
+          <li>Farsang</li>
+          <li>Március 15.</li>
+          <li>Anyák napja</li>
+          <li>Apák napja</li>
+          <li>Augusztus 20.</li>
+          <li>Október 23.</li>
+          <li>Mikulás</li>
+          <li>Karácsony</li>
+          <li>Újév</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== Hanganyag-kóstoló ====================== -->
+    <section class="band band--paper">
+      <div class="container split split--wide-media">
+        <div>
+          <h2>Hallgasd meg a dalokat</h2>
+          <p>A könyv dalaiból készült felvételek a YouTube-csatornánkon szólnak.</p>
+          <a class="btn btn-secondary" href="hanganyag.html">További felvételek</a>
+        </div>
+        <figure>
+          <a class="yt-lite" href="https://www.youtube.com/watch?v=BVCMAuYMKzY" data-yt="BVCMAuYMKzY" target="_blank" rel="noopener" aria-label="Lejátszás: Lánc, lánc, eszterlánc">
+            <img src="https://i.ytimg.com/vi/BVCMAuYMKzY/hqdefault.jpg" width="480" height="360" alt="" loading="lazy">
+          </a>
+          <figcaption>Lánc, lánc, eszterlánc</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- ====================== Ajánlások (spec 5.1) ====================== -->
-    <section class="container">
-      <h2>Ajánlások</h2>
-      <div class="testimonials">
+    <section class="band band--cream">
+      <div class="container">
+        <h2>Ajánlások</h2>
+        <div class="testimonials">
         <blockquote>
           <p>A magyar zene átível minden határon – nemzeti, kulturális, politikai, hangszeres, sőt még nyelvi korlátokon is.</p>
           <cite>— Magyar Kálmán</cite>
@@ -130,20 +226,41 @@
           <p>Ez a hiánypótló zenei tankönyv zseniális egyszerűséggel vezeti be az olvasót az ukulelejáték és a magyar nyelvű népi és más dalok világába.</p>
           <cite>— Keszei Etelka</cite>
         </blockquote>
+        </div>
+        <p><a class="arrow-link" href="ajanlasok.html">A teljes ajánlások</a></p>
+        <p class="muted">A könyv eddig balkáni zenei táborban, néptáncfesztiválokon, cserkészcsapatoknál és hétvégi magyar iskolákban talált gazdára szerte a nyugati parton.</p>
       </div>
-      <p><a href="ajanlasok.html">A teljes ajánlások →</a></p>
-      <p class="muted">A könyv eddig balkáni zenei táborban, néptáncfesztiválokon, cserkészcsapatoknál és hétvégi magyar iskolákban talált gazdára szerte a nyugati parton.</p>
     </section>
 
     <!-- ====================== GYIK ====================== -->
-    <section class="container prose">
-      <h2>Három kérdés, amit mindig megkapunk</h2>
-      <h3>Ukulelekönyv ez?</h3>
-      <p>Nem — daloskönyv bármilyen akkordkísérő hangszerre. Az ukulelefejezet azért van benne, hogy aki még sosem játszott, egy tábor alatt bekapcsolódhasson.</p>
-      <h3>Kell hozzá gitár?</h3>
-      <p>Az akkordjelek működnek gitáron, ukulelén, zongorán, harmonikán — a könyv végén pedig hat hangszer akkordtáblázata van, köztük a háromhúros kontráé.</p>
-      <h3>Hogyan válogattuk a dalokat?</h3>
-      <p>Tíz év kérései alapján: ezek azok a dalok, amiket a kaliforniai magyar közösségek tényleg kérnek — minden alkalomra jut egy, és mindegyik jogtiszta.</p>
+    <section class="band band--paper">
+      <div class="container">
+        <h2>Három kérdés, amit mindig megkapunk</h2>
+        <div class="faq-grid">
+        <div>
+          <h3>Ukulelekönyv ez?</h3>
+          <p>Nem — daloskönyv bármilyen akkordkísérő hangszerre. Az ukulelefejezet azért van benne, hogy aki még sosem játszott, egy tábor alatt bekapcsolódhasson.</p>
+        </div>
+        <div>
+          <h3>Kell hozzá gitár?</h3>
+          <p>Az akkordjelek működnek gitáron, ukulelén, zongorán, harmonikán — a könyv végén pedig hat hangszer akkordtáblázata van, köztük a háromhúros kontráé.</p>
+        </div>
+        <div>
+          <h3>Hogyan válogattuk a dalokat?</h3>
+          <p>Tíz év kérései alapján: ezek azok a dalok, amiket a kaliforniai magyar közösségek tényleg kérnek — minden alkalomra jut egy, és mindegyik jogtiszta.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Záró felhívás ====================== -->
+    <section class="band band--red cta">
+      <div class="container">
+        <span class="bird" aria-hidden="true"></span>
+        <h2>Nem csak gitárra. Nem csak ukulelekönyv. Daloskönyv mindenkinek, aki játszani vagy énekelni szeretne.</h2>
+        <a class="btn btn-primary btn-large" href="vasarlas.html">Megveszem — 35 USD</a>
+        <p>35 USD + 6 USD szállítás az USA-n belül</p>
+      </div>
     </section>
   </main>
 
@@ -160,6 +277,6 @@
     </div>
   </footer>
 
-  <script src="../assets/script.js"></script>
+  <script src="../assets/script.js?v=2"></script>
 </body>
 </html>

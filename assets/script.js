@@ -1,6 +1,7 @@
 /* ==========================================================================
    hungariansongbook.com – közös vanilla JS
-   1) mobil navigáció + legördülő, 2) vásárlói kapu (SHA-256, spec 5.11)
+   1) mobil navigáció + legördülő, 1b) táblázatok telefonon, 1c) YouTube-előnézet,
+   2) vásárlói kapu (SHA-256, spec 5.11)
    Nincs külső függőség, nincs build-lépés.
    ========================================================================== */
 
@@ -8,10 +9,20 @@
 (function () {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
+  function setMenu(open) {
+    nav.classList.toggle("open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
   if (toggle && nav) {
     toggle.addEventListener("click", function () {
-      const open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      setMenu(!nav.classList.contains("open"));
+    });
+    // Esc bezárja a nyitott mobil menüt
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && nav.classList.contains("open")) {
+        setMenu(false);
+        toggle.focus();
+      }
     });
   }
 
@@ -22,6 +33,49 @@
       if (!parent) return;
       const open = parent.classList.toggle("open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+})();
+
+/* --- 1b. Táblázatok telefonon: a sorok kártyákká válnak ---
+   A fejléc szövegét data-label-ként a cellákra írjuk; a CSS (.stacked)
+   700px alatt ebből rajzol címkéket. JS nélkül marad a vízszintes görgetés. */
+(function () {
+  document.querySelectorAll(".table-wrap table").forEach(function (table) {
+    const labels = [...table.querySelectorAll("thead th")].map(function (th) {
+      return th.textContent.trim();
+    });
+    if (!labels.length) return;
+    table.querySelectorAll("tbody tr").forEach(function (tr) {
+      [...tr.children].forEach(function (td, i) {
+        if (labels[i]) td.setAttribute("data-label", labels[i]);
+        // Szám az első cellában (oldalszám): mellé kell a címke, hogy értelmes legyen
+        if (i === 0 && /^\d/.test(td.textContent.trim())) td.classList.add("label-inline");
+      });
+    });
+    table.classList.add("stacked");
+  });
+})();
+
+/* --- 1c. YouTube: könnyű előnézet, a lejátszó csak kattintásra töltődik be ---
+   JS nélkül a link egyszerűen megnyitja a videót a YouTube-on. */
+(function () {
+  document.querySelectorAll("a.yt-lite[data-yt]").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return; // új lapon nyitás maradjon
+      e.preventDefault();
+      const frame = document.createElement("iframe");
+      frame.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(link.dataset.yt) +
+        "?autoplay=1&rel=0";
+      frame.title = link.getAttribute("aria-label") || "YouTube";
+      frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      frame.allowFullscreen = true;
+      const box = document.createElement("div");
+      box.className = "yt-lite playing";
+      box.appendChild(frame);
+      link.replaceWith(box);
     });
   });
 })();

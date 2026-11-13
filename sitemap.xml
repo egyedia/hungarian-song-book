@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hungariansongbook.com/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/index.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/index.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/index.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/index.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/book.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/book.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/konyv.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/book.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/konyv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/book.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/konyv.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/book.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/buy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/buy.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/vasarlas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/buy.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/vasarlas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/buy.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/vasarlas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/buy.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/audio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/audio.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hanganyag.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/audio.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/hanganyag.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/audio.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hanganyag.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/audio.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/tuning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/tuning.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hangolas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/tuning.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/hangolas.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/tuning.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hangolas.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/tuning.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/strumming.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/strumming.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/pengetes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/strumming.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/pengetes.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/strumming.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/pengetes.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/strumming.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/glossary.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/szoszedet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/szoszedet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/glossary.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/szoszedet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/glossary.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/charts.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/charts.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/tablazatok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/charts.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/tablazatok.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/charts.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/tablazatok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/charts.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/endorsements.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/endorsements.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/ajanlasok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/endorsements.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/ajanlasok.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/endorsements.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/ajanlasok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/endorsements.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/kutatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/research.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/kutatasok.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/kutatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/research.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/errata.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/errata.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hibajegyzek.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/errata.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/hibajegyzek.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/errata.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/hibajegyzek.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/errata.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/contact.html"/>
+  </url>
+  <url>
+    <loc>https://hungariansongbook.com/hu/kapcsolat.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hungariansongbook.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://hungariansongbook.com/hu/kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hungariansongbook.com/contact.html"/>
+  </url>
+</urlset>

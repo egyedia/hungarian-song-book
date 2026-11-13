@@ -15,8 +15,8 @@
   <link rel="icon" href="assets/favicon.png?v=2" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -46,7 +46,7 @@
             </ul>
           </li>
           <li><a href="charts.html">Charts</a></li>
-          <li><a href="buy.html" aria-current="page">Buy</a></li>
+          <li><a class="nav-cta" href="buy.html" aria-current="page">Buy</a></li>
           <li>
             <div class="lang-switch">
               <a href="buy.html" aria-current="true" lang="en">EN</a>
@@ -59,27 +59,45 @@
   </header>
 
   <main id="main">
-    <div class="container prose">
-      <h1>Buy the book</h1>
+    <div class="container">
+      <div class="buy-grid">
+        <figure class="book-cover">
+          <picture>
+            <source type="image/webp" srcset="assets/cover-en-480.webp 480w, assets/cover-en-960.webp 960w" sizes="(min-width: 700px) 380px, 280px">
+            <img src="assets/cover-en-800.jpg" width="800" height="1185" alt="Cover of Songs from Beyond the Seven Seas">
+          </picture>
+        </figure>
 
-      <div class="callout">
-        <p><strong>Price:</strong> $35 <span class="muted">+ $6 US shipping (USPS Media Mail from Palo Alto, California — usually ships within a week)</span></p>
-        <p><strong>Bundle:</strong> book + laminated ukulele chord chart — $40 <span class="muted">(+ shipping)</span></p>
+        <div class="buy-panel">
+          <h1>Buy the book</h1>
+
+          <p class="price"><span class="price-amount">$35</span> <span class="price-note">+ $6 US shipping</span></p>
+          <p class="muted">USPS Media Mail from Palo Alto, California — usually ships within a week.</p>
+          <p class="bundle"><strong>Bundle:</strong> book + laminated ukulele chord chart — $40 <span class="muted">(+ shipping)</span></p>
+
+          <h2>For buyers in the US</h2>
+          <p>For now, order directly by email — tell us how many copies and your address, and we'll reply with payment options (PayPal, Venmo, check):</p>
+          <div class="order-box">
+            <a class="btn btn-primary btn-large" href="mailto:order@hungariansongbook.com?subject=Songbook%20order">Email to order</a>
+            <p class="muted">order@hungariansongbook.com</p>
+          </div>
+          <!-- TODO [PAYMENT]: amikor kész a Stripe/PayPal payment link, ez legyen az elsődleges gomb
+               (az e-mailes gomb fölé, az order-box elejére):
+          <a class="btn btn-primary btn-large" href="PAYMENT_LINK_URL">Buy now — $35 + $6 shipping</a>
+          -->
+        </div>
       </div>
 
-      <h2>For buyers in the US</h2>
-      <p>For now, order directly by email — tell us how many copies and your address, and we'll reply with payment options (PayPal, Venmo, check):</p>
-      <p><a class="btn btn-primary" href="mailto:order@hungariansongbook.com">Email to order</a></p>
-      <p class="muted">order@hungariansongbook.com</p>
-      <!-- TODO [PAYMENT]: amikor kész a PayPal/Stripe payment link, ez legyen az elsődleges gomb:
-      <p><a class="btn btn-primary" href="PAYMENT_LINK_URL">Buy now — $35 + $6 shipping</a></p>
-      -->
-
-      <h2>Buying for a group?</h2>
-      <p>Scout troops, weekend schools, dance groups and ukulele clubs: for 5 or more copies we offer a group price — write to <a href="mailto:order@hungariansongbook.com">order@hungariansongbook.com</a>.</p>
-
-      <h2>For buyers in Europe</h2>
-      <p>We are currently looking for local distribution partners in Europe. If you'd like to help bring the book to your area, write to <a href="mailto:contact@hungariansongbook.com">contact@hungariansongbook.com</a>.</p>
+      <div class="info-grid">
+        <div>
+          <h2>Buying for a group?</h2>
+          <p>Scout troops, weekend schools, dance groups and ukulele clubs: for 5 or more copies we offer a group price — write to <a href="mailto:order@hungariansongbook.com">order@hungariansongbook.com</a>.</p>
+        </div>
+        <div>
+          <h2>For buyers in Europe</h2>
+          <p>We are currently looking for local distribution partners in Europe. If you'd like to help bring the book to your area, write to <a href="mailto:contact@hungariansongbook.com">contact@hungariansongbook.com</a>.</p>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -95,6 +113,6 @@
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js?v=2"></script>
 </body>
 </html>

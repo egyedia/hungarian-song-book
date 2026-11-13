@@ -15,8 +15,8 @@
   <link rel="icon" href="../assets/favicon.png?v=2" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css?v=7">
 
   <script type="application/ld+json">
   {
@@ -27,6 +27,7 @@
     "isbn": "979-8-9965723-0-4",
     "bookFormat": "https://schema.org/Paperback",
     "numberOfPages": 222,
+    "bookEdition": "Harmadik, javított kiadás",
     "inLanguage": ["hu", "en"],
     "genre": "Daloskönyv",
     "offers": {"@type": "Offer", "price": "35.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://hungariansongbook.com/hu/vasarlas.html"}
@@ -61,7 +62,7 @@
             </ul>
           </li>
           <li><a href="tablazatok.html">Táblázatok</a></li>
-          <li><a href="vasarlas.html">Vásárlás</a></li>
+          <li><a class="nav-cta" href="vasarlas.html">Vásárlás</a></li>
           <li>
             <div class="lang-switch">
               <a href="../book.html" lang="en">EN</a>
@@ -77,14 +78,28 @@
     <div class="container">
       <h1>A könyv</h1>
 
-      <h2>A szerző bevezetője</h2>
-      <div class="prose page-intro">
-        <p>…Hát ez az a könyv. Inkább kottagyűjtemény, és egy kicsit ukulele oktatási anyag. Tíz éve élek az Egyesült Államokban, és ezalatt számtalanszor gitároztam, énekeltem a helyi magyar közösségben – nemzeti ünnepeken, megemlékezéseken, ismétlődő programokon. Ez a gyűjtemény ezeknek az alkalmaknak az eredménye: sok kedvenc, és sok, valamilyen alkalomhoz illő dal.</p>
-        <p>A könyv egy ukulele-gyorstalpalóval indul – azoknak, akik felnőttként jöttek rá, hogy az aktív zenélés kimaradt az életükből, és pótolnák. Az első fejezetben az évek óta tartott oktatásaim gondolatait és bevált dalait osztom meg – hátha magadra ismersz, és hangszert ragadsz!</p>
-        <p class="signature">Egyedi Attila Levente<span class="place">Palo Alto, Kalifornia, 2026</span></p>
+      <div class="author-note">
+        <div class="prose">
+          <h2>A szerző bevezetője</h2>
+          <p>…Hát ez az a könyv. Inkább kottagyűjtemény, és egy kicsit ukulele oktatási anyag. Tíz éve élek az Egyesült Államokban, és ezalatt számtalanszor gitároztam, énekeltem a helyi magyar közösségben – nemzeti ünnepeken, megemlékezéseken, ismétlődő programokon. Ez a gyűjtemény ezeknek az alkalmaknak az eredménye: sok kedvenc, és sok, valamilyen alkalomhoz illő dal.</p>
+          <p>A könyv egy ukulele-gyorstalpalóval indul – azoknak, akik felnőttként jöttek rá, hogy az aktív zenélés kimaradt az életükből, és pótolnák. Az első fejezetben az évek óta tartott oktatásaim gondolatait és bevált dalait osztom meg – hátha magadra ismersz, és hangszert ragadsz!</p>
+          <p class="signature">Egyedi Attila Levente<span class="place">Palo Alto, Kalifornia, 2026</span></p>
+        </div>
+        <figure class="book-cover">
+          <picture>
+            <source type="image/webp" srcset="../assets/cover-hu-480.webp 480w, ../assets/cover-hu-960.webp 960w" sizes="(min-width: 700px) 260px, 280px">
+            <img src="../assets/cover-hu-800.jpg" width="800" height="1185" alt="A Dalok az Óperencián túlról könyv borítója">
+          </picture>
+        </figure>
       </div>
 
       <h2>Miért egyedülálló</h2>
+      <ul class="stat-row">
+        <li><strong>63</strong> dal</li>
+        <li><strong>6</strong> hangszer akkordtáblázata</li>
+        <li><strong>222</strong> oldal</li>
+        <li><strong>7 × 10"</strong> laposan nyíló wire-o kötés</li>
+      </ul>
       <div class="prose">
         <p>Kétnyelvű daloskönyv ~63 dallal, ütempontos akkordjelöléssel, ukulele-gyorstalpalóval, közösségi éneklés fejezettel, dal-térképpel és hat hangszer akkordtáblázataival – laposan nyíló wire-o kötésben, amely megáll a kottatartón.</p>
         <p>A piacon nincs párja: a nemzetközi ukulele-könyvek nem tudnak magyar repertoárt és esztamot, a magyar daloskönyvek nem adnak kíséretet és módszertant, a cserkész-dalosfüzetek pedig nem adnak ütemjelölést.</p>
@@ -95,26 +110,26 @@
       <!-- 2-3 KIS felbontású minta-OLDALPÁR, max ~900px (spec 5.2). Nyomtatásra alkalmatlan, NINCS PDF/nagy felbontás. -->
       <div class="spreads">
         <figure>
-          <img src="../assets/page-content-parts-of-the-ukulele.jpg" alt="Az ukulele részei — kétnyelvű gyorstalpaló-oldalpár (magyar és angol oldal)">
+          <img src="../assets/page-content-parts-of-the-ukulele.jpg" width="2100" height="1500" loading="lazy" alt="Az ukulele részei — kétnyelvű gyorstalpaló-oldalpár (magyar és angol oldal)">
           <figcaption class="muted">Az ukulele részei ·
             <a href="../assets/page-content-parts-of-the-ukulele.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
           <!-- Inline: kis felbontású (900px) előnézet; a teljes minőség a linkelt PDF-ben (szerzői döntés, spec 1. felülírva). -->
-          <img src="../assets/page-content-lanc-lanc-eszterlanc-web.jpg" alt="Lánc, lánc, eszterlánc — kétnyelvű daloldalpár (kis felbontású előnézet)">
+          <img src="../assets/page-content-lanc-lanc-eszterlanc-web.jpg" width="900" height="643" loading="lazy" alt="Lánc, lánc, eszterlánc — kétnyelvű daloldalpár (kis felbontású előnézet)">
           <figcaption class="muted">Lánc, lánc, eszterlánc ·
             <a href="../assets/page-content-lanc-lanc-eszterlanc.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
-          <img src="../assets/page-content-piros-kancso-piros-bor-web.jpg" alt="Piros kancsó, piros bor — kétnyelvű daloldalpár (kis felbontású előnézet)">
+          <img src="../assets/page-content-piros-kancso-piros-bor-web.jpg" width="900" height="643" loading="lazy" alt="Piros kancsó, piros bor — kétnyelvű daloldalpár (kis felbontású előnézet)">
           <figcaption class="muted">Piros kancsó, piros bor ·
             <a href="../assets/page-content-piros-kancso-piros-bor.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
-          <img src="../assets/page-content-ujev-web.jpg" alt="Újévi dalok — kétnyelvű daloldalpár (kis felbontású előnézet)">
+          <img src="../assets/page-content-ujev-web.jpg" width="900" height="643" loading="lazy" alt="Újévi dalok — kétnyelvű daloldalpár (kis felbontású előnézet)">
           <figcaption class="muted">Újév ·
             <a href="../assets/page-content-ujev.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
@@ -139,7 +154,7 @@
         </div>
         <div>
           <h3>Dalok és táblázatok</h3>
-          <ul class="toc toc-plain">
+          <ul class="toc toc-plain toc-columns">
             <li>Gyorstalpaló</li>
             <li>Kezdő szint</li>
             <li>Népdalok ukulelére</li>
@@ -163,9 +178,18 @@
       </div>
 
       <h2>Adatok</h2>
-      <div class="callout">
-        <p>7 × 10", 222 oldal, laposan nyíló wire-o (fémspirál) kötés, első kiadás, Palo Alto, 2026.</p>
-      </div>
+      <dl class="spec-list">
+        <dt>Méret</dt><dd>7 × 10"</dd>
+        <dt>Terjedelem</dt><dd>222 oldal</dd>
+        <dt>Kötés</dt><dd>laposan nyíló wire-o (fémspirál)</dd>
+        <dt>Kiadás</dt><dd>harmadik, javított kiadás, Palo Alto, 2026</dd>
+        <dt>ISBN</dt><dd>979-8-9965723-0-4</dd>
+      </dl>
+
+      <p class="page-cta">
+        <a class="btn btn-primary btn-large" href="vasarlas.html">Megveszem — 35 USD</a>
+        <a class="btn btn-secondary" href="hanganyag.html">Belehallgatok</a>
+      </p>
     </div>
   </main>
 
@@ -181,6 +205,6 @@
     </div>
   </footer>
 
-  <script src="../assets/script.js"></script>
+  <script src="../assets/script.js?v=2"></script>
 </body>
 </html>

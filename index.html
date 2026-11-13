@@ -17,8 +17,10 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Songs from Beyond the Seven Seas | Hungarian Songbook">
   <meta property="og:description" content="Sing Hungarian on any instrument: 63 songs with a chord over every beat — bilingual, lay-flat, with a beginner ukulele course.">
-  <!-- TODO [ASSET]: 1600px széles borítókép a social previewhöz (spec 7.1) -->
-  <meta property="og:image" content="https://hungariansongbook.com/assets/cover-en.jpg">
+  <meta property="og:image" content="https://hungariansongbook.com/assets/og-card-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:url" content="https://hungariansongbook.com/index.html">
 
   <!-- TODO [ASSET]: kakas/madár sziluett SVG favicon Tóth Zoltántól (spec 3. + 7.4) -->
@@ -27,9 +29,26 @@
   <!-- Display-betű teljes magyar ékezetkészlettel (ő, ű) – Alegreya (spec 3.) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link rel="stylesheet" href="assets/style.css?v=7">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Songs from Beyond the Seven Seas — Dalok az Óperencián túlról",
+    "author": {"@type": "Person", "name": "Attila Levente Egyedi"},
+    "isbn": "979-8-9965723-0-4",
+    "bookFormat": "https://schema.org/Paperback",
+    "numberOfPages": 222,
+    "bookEdition": "Third, revised edition",
+    "inLanguage": ["en", "hu"],
+    "genre": "Songbook",
+    "image": "https://hungariansongbook.com/assets/cover-en-800.jpg",
+    "url": "https://hungariansongbook.com/index.html",
+    "offers": {"@type": "Offer", "price": "35.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://hungariansongbook.com/buy.html"}
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -65,7 +84,7 @@
             </ul>
           </li>
           <li><a href="charts.html">Charts</a></li>
-          <li><a href="buy.html">Buy</a></li>
+          <li><a class="nav-cta" href="buy.html">Buy</a></li>
           <li>
             <div class="lang-switch">
               <a href="index.html" aria-current="true" lang="en">EN</a>
@@ -78,50 +97,127 @@
   </header>
 
   <main id="main">
-    <!-- ====================== Hero (spec 5.1) ====================== -->
-    <section class="hero">
+    <!-- ====================== Hero ====================== -->
+    <section class="hero band--red">
       <div class="container hero-grid">
-        <div>
-          <img class="hero-image" src="assets/cover-en.jpg"
-               alt="Cover of Songs from Beyond the Seven Seas">
-        </div>
-        <div>
+        <div class="hero-copy">
+          <p class="eyebrow">A bilingual Hungarian songbook</p>
           <h1>Songs from Beyond the Seven Seas</h1>
           <p class="lead">Sing Hungarian — on any instrument, for every occasion.</p>
-          <p>63 Hungarian songs — children's songs, folk songs, holiday songs — with a chord over every beat, so guitar, ukulele, piano or accordion players can accompany them at sight. All guidance is bilingual English–Hungarian (the songs themselves are sung in Hungarian), the wire-o binding lies flat on a music stand — a book for the stand, not the shelf — and a gentle from-zero ukulele course is included. All songs copyright-clean.</p>
+          <ul class="fact-chips">
+          <li>63 songs</li>
+          <li>A chord over every beat</li>
+          <li>Lies flat on a music stand</li>
+          <li>Beginner ukulele course</li>
+          </ul>
           <div class="hero-buttons">
-            <a class="btn btn-primary" href="buy.html">Buy the book — $35</a>
+            <a class="btn btn-primary btn-large" href="buy.html">Buy the book — $35</a>
             <a class="btn btn-secondary" href="book.html#inside">Look inside</a>
             <a class="btn btn-secondary" href="audio.html">Listen</a>
           </div>
         </div>
+        <div class="hero-cover">
+          <picture>
+            <source type="image/webp" srcset="assets/cover-en-480.webp 480w, assets/cover-en-960.webp 960w" sizes="(min-width: 700px) 360px, 300px">
+            <img src="assets/cover-en-800.jpg" width="800" height="1185" fetchpriority="high"
+                 alt="Cover of Songs from Beyond the Seven Seas">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Mi van benne + minta-oldalpár ====================== -->
+    <section class="band band--paper after-hero">
+      <div class="container split">
+        <div>
+          <h2>A book for the stand, not the shelf</h2>
+          <p class="muted">63 Hungarian songs — children's songs, folk songs, holiday songs.</p>
+          <ul class="feature-list">
+          <li>A chord over every beat, so guitar, ukulele, piano or accordion players can accompany them at sight.</li>
+          <li>All guidance is bilingual English–Hungarian (the songs themselves are sung in Hungarian).</li>
+          <li>The wire-o binding lies flat on a music stand.</li>
+          <li>A gentle from-zero ukulele course is included.</li>
+          <li>All songs copyright-clean.</li>
+          </ul>
+          <a class="btn btn-secondary" href="book.html#inside">Look inside</a>
+        </div>
+        <figure>
+          <a class="spread-frame" href="book.html#inside">
+            <img src="assets/page-content-lanc-lanc-eszterlanc-web.jpg" width="900" height="643" loading="lazy"
+                 alt="Lánc, lánc, eszterlánc — bilingual song spread (low resolution preview)">
+          </a>
+          <figcaption>Lánc, lánc, eszterlánc — each spread shows both languages side by side.</figcaption>
+        </figure>
       </div>
     </section>
 
     <!-- ====================== Három kártya (spec 5.1) ====================== -->
-    <section class="container">
-      <h2>Which door is yours?</h2>
-      <div class="card-grid">
+    <section class="band band--cream">
+      <div class="container">
+        <h2>Which door is yours?</h2>
+        <div class="card-grid">
         <a class="card" href="book.html">
           <h3>We sing together</h3>
           <p>Family, scouts, camp, church: a song for every occasion of the year. The songs are sung in Hungarian — every explanation is in English too, so mixed families and groups can join.</p>
+          <span class="arrow-link">About the book</span>
         </a>
         <a class="card" href="tuning.html">
           <h3>I've never played an instrument</h3>
           <p>The ukulele course takes you from zero to your first campfire song.</p>
+          <span class="arrow-link">Start with tuning</span>
         </a>
         <a class="card" href="book.html#inside">
           <h3>I already play — give me repertoire</h3>
           <p>Chords on every beat, the esztam pulse explained, and chord charts for six instruments — including kontra.</p>
+          <span class="arrow-link">Look inside</span>
         </a>
+        </div>
       </div>
-      <p class="center muted">Not just for guitar. Not only a ukulele book. A songbook for anyone who wants to play or sing along.</p>
+    </section>
+
+    <!-- ====================== Az év alkalmai (a könyv fejezetei) ====================== -->
+    <section class="band band--ink">
+      <div class="container">
+        <div class="section-head center">
+          <h2>A song for every occasion of the year</h2>
+          <p>These are the songs Hungarian communities in California actually ask for.</p>
+        </div>
+        <ol class="occasions">
+          <li>Carnival Season</li>
+          <li>March 15th</li>
+          <li>Mother's Day</li>
+          <li>Father's Day</li>
+          <li>August 20th</li>
+          <li>October 23rd</li>
+          <li>Saint Nicholas</li>
+          <li>Christmas</li>
+          <li>New Year</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ====================== Hanganyag-kóstoló ====================== -->
+    <section class="band band--paper">
+      <div class="container split split--wide-media">
+        <div>
+          <h2>Hear the songs</h2>
+          <p>The recordings made from the songs in the book are on our YouTube channel.</p>
+          <a class="btn btn-secondary" href="audio.html">More recordings</a>
+        </div>
+        <figure>
+          <a class="yt-lite" href="https://www.youtube.com/watch?v=BVCMAuYMKzY" data-yt="BVCMAuYMKzY" target="_blank" rel="noopener" aria-label="Play: Lánc, lánc, eszterlánc">
+            <img src="https://i.ytimg.com/vi/BVCMAuYMKzY/hqdefault.jpg" width="480" height="360" alt="" loading="lazy">
+          </a>
+          <figcaption>Lánc, lánc, eszterlánc</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- ====================== Ajánlások (spec 5.1) ====================== -->
-    <section class="container">
-      <h2>Endorsements</h2>
-      <div class="testimonials">
+    <section class="band band--cream">
+      <div class="container">
+        <h2>Endorsements</h2>
+        <div class="testimonials">
         <blockquote>
           <p>Hungarian music transcends boundaries—national, cultural, political, instrumental, and even linguistic.</p>
           <cite>— Kalman Magyar</cite>
@@ -130,20 +226,41 @@
           <p>This much-needed music textbook opens the door, with brilliant simplicity, to the world of ukulele playing and Hungarian songs.</p>
           <cite>— Etelka Keszei</cite>
         </blockquote>
+        </div>
+        <p><a class="arrow-link" href="endorsements.html">Read the full endorsements</a></p>
+        <p class="muted">The book has found its people at Balkan music camp, folk dance festivals, Hungarian scout troops and weekend schools across the West Coast.</p>
       </div>
-      <p><a href="endorsements.html">Read the full endorsements →</a></p>
-      <p class="muted">The book has found its people at Balkan music camp, folk dance festivals, Hungarian scout troops and weekend schools across the West Coast.</p>
     </section>
 
-    <!-- ====================== FAQ ====================== -->
-    <section class="container prose">
-      <h2>Three questions we always get</h2>
-      <h3>Is this a ukulele book?</h3>
-      <p>No — it's a songbook for any chord-playing instrument. The ukulele chapter exists so a complete beginner can join in by the end of one camp.</p>
-      <h3>Do I need a guitar?</h3>
-      <p>The chord letters work on guitar, ukulele, piano and accordion — and the back of the book has chord charts for six instruments, including the three-string kontra.</p>
-      <h3>How were the songs chosen?</h3>
-      <p>By ten years of requests: these are the songs Hungarian communities in California actually ask for — one for every occasion of the year, and every one of them copyright-clean.</p>
+    <!-- ====================== GYIK ====================== -->
+    <section class="band band--paper">
+      <div class="container">
+        <h2>Three questions we always get</h2>
+        <div class="faq-grid">
+        <div>
+          <h3>Is this a ukulele book?</h3>
+          <p>No — it's a songbook for any chord-playing instrument. The ukulele chapter exists so a complete beginner can join in by the end of one camp.</p>
+        </div>
+        <div>
+          <h3>Do I need a guitar?</h3>
+          <p>The chord letters work on guitar, ukulele, piano and accordion — and the back of the book has chord charts for six instruments, including the three-string kontra.</p>
+        </div>
+        <div>
+          <h3>How were the songs chosen?</h3>
+          <p>By ten years of requests: these are the songs Hungarian communities in California actually ask for — one for every occasion of the year, and every one of them copyright-clean.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Záró felhívás ====================== -->
+    <section class="band band--red cta">
+      <div class="container">
+        <span class="bird" aria-hidden="true"></span>
+        <h2>Not just for guitar. Not only a ukulele book. A songbook for anyone who wants to play or sing along.</h2>
+        <a class="btn btn-primary btn-large" href="buy.html">Buy the book — $35</a>
+        <p>$35 + $6 US shipping</p>
+      </div>
     </section>
   </main>
 
@@ -160,6 +277,6 @@
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js?v=2"></script>
 </body>
 </html>

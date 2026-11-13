@@ -15,8 +15,8 @@
   <link rel="icon" href="assets/favicon.png?v=2" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css?v=7">
 
   <script type="application/ld+json">
   {
@@ -27,6 +27,7 @@
     "isbn": "979-8-9965723-0-4",
     "bookFormat": "https://schema.org/Paperback",
     "numberOfPages": 222,
+    "bookEdition": "Third, revised edition",
     "inLanguage": ["en", "hu"],
     "genre": "Songbook",
     "offers": {"@type": "Offer", "price": "35.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "url": "https://hungariansongbook.com/buy.html"}
@@ -61,7 +62,7 @@
             </ul>
           </li>
           <li><a href="charts.html">Charts</a></li>
-          <li><a href="buy.html">Buy</a></li>
+          <li><a class="nav-cta" href="buy.html">Buy</a></li>
           <li>
             <div class="lang-switch">
               <a href="book.html" aria-current="true" lang="en">EN</a>
@@ -77,14 +78,28 @@
     <div class="container">
       <h1>The Book</h1>
 
-      <h2>From the Author</h2>
-      <div class="prose page-intro">
-        <p>…So this is that book—more of a songbook, with some ukulele teaching material as well. I have been living in the United States for ten years, and during that time I have played and sung countless times in the Hungarian community here—at national holidays, commemorations, and recurring annual events. This collection is the result of those occasions: many favorites, and many songs suited to one occasion or another.</p>
-        <p>The book begins with a crash course on the ukulele—for everyone who only realized in adulthood that active music-making had somehow been left out of their lives, and would like to make up for it. In the first chapter I share the thoughts and proven songs gathered from the classes I've taught for years here—in case you recognize yourself in this, and feel inspired to pick up an instrument.</p>
-        <p class="signature">Attila Levente Egyedi<span class="place">Palo Alto, California, 2026</span></p>
+      <div class="author-note">
+        <div class="prose">
+          <h2>From the Author</h2>
+          <p>…So this is that book—more of a songbook, with some ukulele teaching material as well. I have been living in the United States for ten years, and during that time I have played and sung countless times in the Hungarian community here—at national holidays, commemorations, and recurring annual events. This collection is the result of those occasions: many favorites, and many songs suited to one occasion or another.</p>
+          <p>The book begins with a crash course on the ukulele—for everyone who only realized in adulthood that active music-making had somehow been left out of their lives, and would like to make up for it. In the first chapter I share the thoughts and proven songs gathered from the classes I've taught for years here—in case you recognize yourself in this, and feel inspired to pick up an instrument.</p>
+          <p class="signature">Attila Levente Egyedi<span class="place">Palo Alto, California, 2026</span></p>
+        </div>
+        <figure class="book-cover">
+          <picture>
+            <source type="image/webp" srcset="assets/cover-en-480.webp 480w, assets/cover-en-960.webp 960w" sizes="(min-width: 700px) 260px, 280px">
+            <img src="assets/cover-en-800.jpg" width="800" height="1185" alt="Cover of Songs from Beyond the Seven Seas">
+          </picture>
+        </figure>
       </div>
 
       <h2>What makes it unique</h2>
+      <ul class="stat-row">
+        <li><strong>63</strong> songs</li>
+        <li><strong>6</strong> instruments with chord charts</li>
+        <li><strong>222</strong> pages</li>
+        <li><strong>7 × 10"</strong> lay-flat wire-o binding</li>
+      </ul>
       <div class="prose">
         <p>A bilingual songbook with ~63 songs, beat-by-beat chord markings, a ukulele bootcamp, a community-singing chapter, a song map, and chord charts for six instruments — in a lay-flat wire-o binding that stays open on a music stand.</p>
         <p>There is nothing else like it on the market: international ukulele books don't cover the Hungarian repertoire or the <em>esztam</em> (boom-chuck) pulse, Hungarian songbooks don't provide accompaniment or method, and scout song booklets don't mark the beat.</p>
@@ -95,26 +110,26 @@
       <!-- 2-3 KIS felbontású minta-OLDALPÁR, max ~900px (spec 5.2). Nyomtatásra alkalmatlan, NINCS PDF/nagy felbontás. -->
       <div class="spreads">
         <figure>
-          <img src="assets/page-content-parts-of-the-ukulele.jpg" alt="Parts of the Ukulele — bilingual bootcamp spread (Hungarian and English pages)">
+          <img src="assets/page-content-parts-of-the-ukulele.jpg" width="2100" height="1500" loading="lazy" alt="Parts of the Ukulele — bilingual bootcamp spread (Hungarian and English pages)">
           <figcaption class="muted">Parts of the Ukulele ·
             <a href="assets/page-content-parts-of-the-ukulele.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
           <!-- Inline: kis felbontású (900px) előnézet; a teljes minőség a linkelt PDF-ben (szerzői döntés, spec 1. felülírva). -->
-          <img src="assets/page-content-lanc-lanc-eszterlanc-web.jpg" alt="Lánc, lánc, eszterlánc — bilingual song spread (low resolution preview)">
+          <img src="assets/page-content-lanc-lanc-eszterlanc-web.jpg" width="900" height="643" loading="lazy" alt="Lánc, lánc, eszterlánc — bilingual song spread (low resolution preview)">
           <figcaption class="muted">Lánc, lánc, eszterlánc ·
             <a href="assets/page-content-lanc-lanc-eszterlanc.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/page-content-piros-kancso-piros-bor-web.jpg" alt="Piros kancsó, piros bor — bilingual song spread (low resolution preview)">
+          <img src="assets/page-content-piros-kancso-piros-bor-web.jpg" width="900" height="643" loading="lazy" alt="Piros kancsó, piros bor — bilingual song spread (low resolution preview)">
           <figcaption class="muted">Piros kancsó, piros bor ·
             <a href="assets/page-content-piros-kancso-piros-bor.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
         </figure>
         <figure>
-          <img src="assets/page-content-ujev-web.jpg" alt="New Year songs — bilingual song spread (low resolution preview)">
+          <img src="assets/page-content-ujev-web.jpg" width="900" height="643" loading="lazy" alt="New Year songs — bilingual song spread (low resolution preview)">
           <figcaption class="muted">New Year ·
             <a href="assets/page-content-ujev.pdf" class="pdf-link" target="_blank" rel="noopener">PDF</a>
           </figcaption>
@@ -139,7 +154,7 @@
         </div>
         <div>
           <h3>Songs &amp; charts</h3>
-          <ul class="toc toc-plain">
+          <ul class="toc toc-plain toc-columns">
             <li>Bootcamp</li>
             <li>Beginner Songs</li>
             <li>Folk Songs for the Ukulele</li>
@@ -163,9 +178,18 @@
       </div>
 
       <h2>Details</h2>
-      <div class="callout">
-        <p>7 × 10", 222 pages, lay-flat wire-o binding, first edition, Palo Alto, 2026.</p>
-      </div>
+      <dl class="spec-list">
+        <dt>Size</dt><dd>7 × 10"</dd>
+        <dt>Pages</dt><dd>222</dd>
+        <dt>Binding</dt><dd>lay-flat wire-o</dd>
+        <dt>Edition</dt><dd>third, revised edition, Palo Alto, 2026</dd>
+        <dt>ISBN</dt><dd>979-8-9965723-0-4</dd>
+      </dl>
+
+      <p class="page-cta">
+        <a class="btn btn-primary btn-large" href="buy.html">Buy the book — $35</a>
+        <a class="btn btn-secondary" href="audio.html">Listen</a>
+      </p>
     </div>
   </main>
 
@@ -181,6 +205,6 @@
     </div>
   </footer>
 
-  <script src="assets/script.js"></script>
+  <script src="assets/script.js?v=2"></script>
 </body>
 </html>
