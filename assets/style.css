@@ -853,6 +853,7 @@ figcaption { color: var(--gray); font-size: 0.95rem; margin-top: 0.6rem; }
 }
 .order-box { margin: 1.5rem 0 0; }
 .order-box .btn { width: 100%; }
+.order-box .btn + .btn { margin-top: 0.75rem; }
 .order-box .muted { margin: 0.6rem 0 0; text-align: center; }
 
 .info-grid { display: grid; gap: var(--gap); margin-top: 3rem; }
